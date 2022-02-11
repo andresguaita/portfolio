@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
-import DirectionReveal from "direction-reveal";
+import DirectionReveal from 'direction-reveal';
 import ModalOneContent from "./modal/ModalOneContent";
 import ModalTwoContent from "./modal/ModalTwoContent";
 import ModalThreeContent from "./modal/ModalThreeContent";
