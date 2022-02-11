@@ -21,7 +21,8 @@
     "react-tabs": "^3.2.2",
     "react-transition-group": "^4.4.2",
     "slick-carousel": "^1.8.1",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "direction-reveal": "^2.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -46,8 +47,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "direction-reveal": "^2.0.2"
   }
 }

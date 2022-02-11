@@ -27,20 +27,23 @@ const PortfolioLight = () => {
     setIsOpen3(!isOpen3);
   }
   
+  
+ 
+
 
   useEffect(() => {
-    // Init with default setup
-    DirectionReveal();
-
-    // Init with all options at default setting
-    DirectionReveal({
-      selector: ".direction-reveal",
-      itemSelector: ".direction-reveal__card",
-      animationName: "slide",
-      animationPostfixEnter: "enter",
-      animationPostfixLeave: "leave",
-      touchThreshold: 500,
-    });
+  DirectionReveal();
+ 
+// Init with all options at default setting
+ DirectionReveal({
+  selector: '.direction-reveal',
+  itemSelector: '.direction-reveal__card',
+  animationName: 'swing',
+  animationPostfixEnter: 'enter',
+  animationPostfixLeave: 'leave',
+  enableTouch: true,
+  touchThreshold: 250
+});
   }, []);
 
   return (
