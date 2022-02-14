@@ -204,7 +204,7 @@ const PortfolioLight = () => {
               >
                 <img src="img/projects/project-5.jpg" alt="Portolio" />
                 <div className="direction-reveal__overlay direction-reveal__anim--enter">
-                  <span className="content-title"> Saas App Project</span>
+                  <span className="content-title">Heroes App</span>
                 </div>
               </figure>
 

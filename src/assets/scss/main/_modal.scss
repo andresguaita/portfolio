@@ -23,12 +23,13 @@
   border-radius: 10px;
   outline: none;
   .box_inner {
-    height: 75vh;
+    max-height: 90vh;
     width: 750px;
     overflow-y: auto;
 
     @media (max-width: 1400px) {
       width: 900px;
+     
     }
     @media (max-width: 992px) {
       width: 700px;

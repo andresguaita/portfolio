@@ -36,7 +36,7 @@ const ModalFourContent = () => {
             <div className="col-12 col-sm-6 mb-2">
               <i className="fa fa-code pr-2"></i>
               <span className="project-label"> Tecnologías </span>:{" "}
-              <span className="ft-wt-600 uppercase">HTML, CSS, Javascript, React Native </span>
+              <span className="ft-wt-600 uppercase">HTML, CSS, Typescript, React Native </span>
             </div>
             {/* End .col */}
 
