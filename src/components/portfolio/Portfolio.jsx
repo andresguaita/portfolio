@@ -4,13 +4,17 @@ import Modal from "react-modal";
 import ModalOneContent from "./modal/ModalOneContent";
 import ModalTwoContent from "./modal/ModalTwoContent";
 import ModalThreeContent from "./modal/ModalThreeContent";
-
+import ModalFourContent from "./modal/ModalFourContent";
+import ModalFiveContent from "./modal/ModalFiveContent";
 
 const Portfolio = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(false);
-  
+  const [isOpen4, setIsOpen4] = useState(false);
+  const [isOpen5, setIsOpen5] = useState(false);
+
+
   function toggleModalOne() {
     setIsOpen(!isOpen);
   }
@@ -20,7 +24,14 @@ const Portfolio = () => {
   function toggleModalThree() {
     setIsOpen3(!isOpen3);
   }
-  
+
+  function toggleModalFour() {
+    setIsOpen4(!isOpen4);
+  }
+
+  function toggleModalFive() {
+    setIsOpen5(!isOpen5);
+  }
 
   return (
     <Tabs>
@@ -137,6 +148,84 @@ const Portfolio = () => {
               {/* End  ModalThreeContent */}
             </li>
             {/* <!-- Portfolio Item Ends --> */}
+
+            <li
+              className="direction-reveal"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              data-aos-delay="0"
+            >
+              <figure
+                className="direction-reveal__card"
+                onClick={toggleModalFour}
+              >
+                <img src="img/projects/project-4-0.png" alt="Portolio" />
+                <div className=" hover-content-wrapper">
+                  <span className="content-title"> Pokedex</span>
+                </div>
+              </figure>
+
+              {/* Start ModalFourContent */}
+              <Modal
+                isOpen={isOpen4}
+                onRequestClose={toggleModalFour}
+                contentLabel="My dialog"
+                className="custom-modal dark"
+                overlayClassName="custom-overlay dark"
+                closeTimeoutMS={500}
+              >
+                <div>
+                  <button className="close-modal" onClick={toggleModalFour}>
+                    <img src="/img/cancel.svg" alt="close icon" />
+                  </button>
+                  {/* End close icon */}
+
+                  <div className="box_inner portfolio">
+                    <ModalFourContent />
+                  </div>
+                </div>
+              </Modal>
+              {/* End  ModalFourContent */}
+            </li>
+
+            <li
+              className="direction-reveal"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              data-aos-delay="100"
+            >
+              <figure
+                className="direction-reveal__card"
+                onClick={toggleModalFive}
+              >
+                <img src="img/projects/project-5.jpg" alt="Portolio" />
+                <div className=" hover-content-wrapper">
+                  <span className="content-title"> Saas App Project</span>
+                </div>
+              </figure>
+
+              {/* Start ModalFiveContent */}
+              <Modal
+                isOpen={isOpen5}
+                onRequestClose={toggleModalFive}
+                contentLabel="My dialog"
+                className="custom-modal dark"
+                overlayClassName="custom-overlay dark"
+                closeTimeoutMS={500}
+              >
+                <div>
+                  <button className="close-modal" onClick={toggleModalFive}>
+                    <img src="/img/cancel.svg" alt="close icon" />
+                  </button>
+                  {/* End close icon */}
+
+                  <div className="box_inner portfolio">
+                    <ModalFiveContent />
+                  </div>
+                </div>
+              </Modal>
+              {/* End  ModalFiveContent */}
+            </li>
 
           </ul>
         </TabPanel>

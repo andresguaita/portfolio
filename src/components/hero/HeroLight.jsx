@@ -9,9 +9,8 @@ const heroContent = {
   heroDesignation: "Desarollador FullStack",
   heroDescriptions: `Soy un Desarrollador Fullstack, 
   me apasiona construir software que impacte 
-  y ayude a mejorar la vida de las personas. Que encuentra alegría en el trabajo duro y práctico requerido 
-  para resolver los desafíos más 
-  complejos en desarrollo de Software.`,
+  y ayude a mejorar la vida de las personas. Que encuentra 
+  alegría en el trabajo duro para conseguir lograr los objetivos planteados.`,
   heroBtn: "mas sobre mi",
 };
 
@@ -35,7 +34,7 @@ const HeroLight = () => {
         <div className="col-12 col-lg-8 offset-lg-4 home-details  text-center text-lg-start">
           <div>
             <img
-              src={`img/hero/${heroContent.heroMobileImage}.jpg`}
+              src={`img/hero/${heroContent.heroMobileImage}.png`}
               className="img-fluid main-img-mobile d-sm-block d-lg-none"
               alt="hero man"
             />
