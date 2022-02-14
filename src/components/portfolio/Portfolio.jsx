@@ -84,7 +84,7 @@ const Portfolio = () => {
               <figure onClick={toggleModalTwo}>
                 <img src="img/projects/project-2-1.jpg" alt="Portolio" />
                 <div className=" hover-content-wrapper">
-                  <span className="content-title">Countries App</span>
+                  <span className="content-title">Journal App</span>
                 </div>
               </figure>
 
