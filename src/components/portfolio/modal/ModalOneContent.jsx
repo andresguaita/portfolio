@@ -45,11 +45,11 @@ const ModalOneContent = () => {
               <span className="project-label">Live </span>:{" "}
               <span className="ft-wt-600 uppercase">
                 <a
-                  href="http://countries-app-andres.herokuapp.com/"
+                  href="https://frontend-countries-ashy.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  countries-app-andres.herokuapp.com/
+                  frontend-countries-ashy.vercel.app
                 </a>
               </span>
             </div>

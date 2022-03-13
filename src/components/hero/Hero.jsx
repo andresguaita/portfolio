@@ -9,8 +9,7 @@ const heroContent = {
   heroDesignation: "Desarollador FullStack",
   heroDescriptions: `Soy un Desarrollador Fullstack, 
   me apasiona construir software que impacte 
-  y ayude a mejorar la vida de las personas. Que encuentra 
-  alegría en el trabajo duro para conseguir lograr los objetivos planteados.`,
+  y ayude a mejorar la vida de las personas, con conocimientos en Tecnologías como React, Node, y Express.`,
   heroBtn: "mas sobre mi",
 };
 

@@ -17,6 +17,7 @@ const PortfolioLight = () => {
   const [isOpen3, setIsOpen3] = useState(false);
   const [isOpen4, setIsOpen4] = useState(false);
   const [isOpen5, setIsOpen5] = useState(false);
+  const [isOpen6, setIsOpen6] = useState(false);
  
 
   function toggleModalOne() {
@@ -37,7 +38,9 @@ const PortfolioLight = () => {
     setIsOpen5(!isOpen5);
   }
   
- 
+  function toggleModalSix() {
+    setIsOpen6(!isOpen6);
+  }
 
 
   useEffect(() => {
@@ -61,7 +64,7 @@ const PortfolioLight = () => {
         <figure className="direction-reveal__card" onClick={toggleModalOne}>
           <img src="img/projects/project-1.jpg" alt="Portolio" />
           <div className=" direction-reveal__overlay direction-reveal__anim--enter">
-            <span className="direction-reveal__title">Countries App</span>
+            <span className="direction-reveal__title">Aplicacion que muestra una lista de paises y permite crear actividades por cada pais</span>
           </div>
         </figure>
 
@@ -88,13 +91,42 @@ const PortfolioLight = () => {
         {/* End  ModalOneContent */}
       </li>
       {/* <!-- Portfolio Item Ends --> */}
+      <li className="direction-reveal">
+        <figure className="direction-reveal__card" onClick={toggleModalSix}>
+          <img src="img/projects/project-6.PNG" alt="Portolio" />
+          <div className=" direction-reveal__overlay direction-reveal__anim--enter">
+            <span className="direction-reveal__title">Permite a refugios de mascotas registrarse para dar a conocer las mascotas que tienen en adopción, ademas las personas pueden visualizar el catalogo y adoptar a la mascota de su preferencia</span>
+          </div>
+        </figure>
 
+        {/* Start ModalTwoContent */}
+        <Modal
+          isOpen={isOpen6}
+          onRequestClose={toggleModalSix}
+          contentLabel="My dialog"
+          className="custom-modal dark green"
+          overlayClassName="custom-overlay"
+          closeTimeoutMS={500}
+        >
+          <div>
+            <button className="close-modal" onClick={toggleModalSix}>
+              <img src="/img/cancel.svg" alt="close icon" />
+            </button>
+            {/* End close icon */}
+
+            <div className="box_inner portfolio">
+              <ModalSixContent />
+            </div>
+          </div>
+        </Modal>
+        {/* End  ModalTwoContent */}
+      </li>
       {/* <!-- Portfolio Item Starts --> */}
       <li className="direction-reveal">
         <figure className="direction-reveal__card" onClick={toggleModalTwo}>
           <img src="img/projects/project-2.jpg" alt="Portolio" />
           <div className=" direction-reveal__overlay direction-reveal__anim--enter">
-            <span className="direction-reveal__title">Journal App</span>
+            <span className="direction-reveal__title">Aplicacion que permite crear una cuenta con Google o Email y Contraseña, y llevar una lista de las tareas que se han realizado durante el dia</span>
           </div>
         </figure>
 
@@ -127,7 +159,7 @@ const PortfolioLight = () => {
         <figure className="direction-reveal__card" onClick={toggleModalThree}>
           <img src="img/projects/project-3.jpg" alt="Portolio" />
           <div className=" direction-reveal__overlay direction-reveal__anim--enter">
-            <span className="direction-reveal__title">Anime Encuesta</span>
+            <span className="direction-reveal__title">Podrás realizar encuesta de tus animes favoritos, todo en tiempo real.</span>
           </div>
         </figure>
 
@@ -165,7 +197,7 @@ const PortfolioLight = () => {
               >
                 <img src="img/projects/project-4-0.png" alt="Portolio" />
                 <div className=" direction-reveal__overlay direction-reveal__anim--enter">
-                  <span className="content-title"> Pokedex</span>
+                  <span className="content-title"> Aplicación móvil en la que podrás tener toda la información de tus pokemones favoritos</span>
                 </div>
               </figure>
 
