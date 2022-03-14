@@ -271,45 +271,6 @@ const Portfolio = () => {
               {/* End  ModalFiveContent */}
             </li>
 
-            <li
-              className="direction-reveal"
-              data-aos="fade-right"
-              data-aos-duration="1200"
-              data-aos-delay="100"
-            >
-              <figure
-                className="direction-reveal__card"
-                onClick={toggleModalFive}
-              >
-                <img src="img/projects/project-5.jpg" alt="Portolio" />
-                <div className=" hover-content-wrapper">
-                  <span className="content-title"> Heroes App </span>
-                </div>
-              </figure>
-
-              {/* Start ModalFiveContent */}
-              <Modal
-                isOpen={isOpen5}
-                onRequestClose={toggleModalFive}
-                contentLabel="My dialog"
-                className="custom-modal dark"
-                overlayClassName="custom-overlay dark"
-                closeTimeoutMS={500}
-              >
-                <div>
-                  <button className="close-modal" onClick={toggleModalFive}>
-                    <img src="/img/cancel.svg" alt="close icon" />
-                  </button>
-                  {/* End close icon */}
-
-                  <div className="box_inner portfolio">
-                    <ModalFiveContent />
-                  </div>
-                </div>
-              </Modal>
-              {/* End  ModalFiveContent */}
-            </li>
-
           </ul>
         </TabPanel>
         {/* End MOCKUP Project */}
